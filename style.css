@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Raleway";
+    font-size: small;
+}
+
+body {
+    background-image: url(images/bg-desktop.png);
+    background-position-y: 50vh;
+    background-position-x: left ;
+    background-repeat: no-repeat;
+    background-color: hsl(229, 57%, 11%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-box {
+    width: 250px;
+    height: 165px;
+    border-radius: .5rem;
+    border-top-right-radius: 5rem;
+    background-color: hsl(228, 56%, 26%);
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    justify-content: space-evenly;
+}
+
+.row {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.second-box {
+    height: 125px;
+    width: 40%;
+    background-color: hsl(228, 56%, 26%);
+    max-width: 400px;
+    min-width: 335px;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+    color: #bebebe;
+    position: relative;
+    top: 2.85vh;
+}
+
+.left {
+    height: 45px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+    border-radius: 0.5rem;
+    background-color: white;
+    font-size: xx-small;
+    align-items: center;  
+}
+
+.triangle {
+    display: block;
+    position: absolute;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid white;
+    right: 0px;
+    bottom: -15px;
+}
+
+.second_first {
+    width: 90%;
+    margin-left: 8%;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.second_sec {
+    margin-left: 8%;
+    width: 84%;
+    height: 8px;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    background-color: hsl(229, 57%, 11%);
+    margin-bottom: 10px;
+}
+
+.color {
+    height: 100%;
+    width: 81.5%;
+    background-image: linear-gradient(90deg,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+.ball {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    right: 8px;
+    z-index: 2;
+}
+
+.second_third {
+    width: 85%;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 20px;
+}
+
+@media (min-width:640px) and (max-width:950px) {
+    body {
+        background-position-x: right;
+    }
+}
+
+
+
+@media (max-width:639px) {
+    body {
+        background-image: url(images/bg-mobile.png);
+        background-size: cover;
+        background-position-y: 0px;
+        background-position-x: left;
+        background-repeat: no-repeat;
+        background-color: hsl(229, 57%, 11%);
+        min-height: 100vh;
+        flex-direction: column;
+    }
+    
+    .first-box {
+        height: 165px;
+        width: 80%;
+        padding-left: 0%;
+        min-width: 200px;
+        max-width: 280px;
+    }
+
+    .second-box {
+        width: 80%;
+        max-width: 280px;
+        min-width: 200px;
+        margin-left: 0px;
+        position: relative;
+    }
+
+    .row {
+        margin-left: 10%;
+    }
+    
+    .hero {
+        margin-left: 10%;
+    }
+
+    .left {
+        position: absolute;
+        bottom: -22px;
+        right:  38%;
+        background-color: white;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+}
